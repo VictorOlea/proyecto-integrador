@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+    color: blue;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+
+.btn-contact{
+    background: purple;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-contact:hover{
+    background: rgb(107, 2, 107)
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.div-sect2{
+    border: 2px;
+    margin: 20px;
+}
+
+.art-sect2{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    margin: 20px;
+}
+
+.art-h1{
+    font-size: 44px;
+    text-align: right;
+}
+
+.art-p{
+    text-align: right;
+}
+
+.art-btn{
+    background: purple;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.section-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: purple;
+}
+
+.art-sec3{
+    color: white;
+}
+
+.div-sec3{
+    color: white;
+    text-align: right;
+}
+
+.section-4{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.div-sec4{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+
+
+.section-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-1{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
