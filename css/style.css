@@ -1,151 +1,166 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html, body{
-    font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 160px;
-
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 160px;
 }
 
-.nav-list{
-    display: flex;
-    align-items: center;
+.nav-list {
+  display: flex;
+  align-items: center;
 }
 
-.nav-item{
-    list-style: none;
-    margin-right: 2rem;
-    color: blue;
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+  color: #8b48bf;
 }
 
-.nav-item a{
-    text-decoration: none;
+.nav-item a {
+  text-decoration: none;
 }
 
-.nav-item a:hover{
-    color: black;
+.nav-item a:hover {
+  color: #8b48bf;
 }
 
-.btn-contact{
-    background: purple;
-    border: none;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border-radius: 50px;
-    padding: 0.5rem 1rem;
+.btn-contact {
+  background: #8d4ebd;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
 }
 
-.btn-contact:hover{
-    background: rgb(107, 2, 107)
+.btn-contact:hover {
+  background: #CCA4CC;
 }
 
-.nav-bar{
-    display: flex;
+.nav-bar {
+  display: flex;
 }
 
-.lista{
-    display: flex;
-    justify-content: space-between;
+.lista {
+  display: flex;
+  justify-content: space-between;
 }
 
-.section-2{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+.presentation__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.div-sect2{
-    border: 2px;
-    margin: 20px;
+.presentation__item {
+  border: 2px;
+  margin: 20px;
 }
 
-.art-sect2{
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    border: 2px;
-    margin: 20px;
+.presentation__article {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  border: 2px;
+  margin: 20px;
+  padding: 1rem 10%;
 }
 
-.art-h1{
-    font-size: 44px;
-    text-align: right;
+.presentation__title {
+  color: #323851;
+  font-size: 44px;
+  text-align: right;
 }
 
-.art-p{
-    text-align: right;
+.presentation__paragraph{
+  text-align: right;
 }
 
-.art-btn{
-    background: purple;
-    border: none;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border-radius: 50px;
-    padding: 0.5rem 1rem;
+.presentation-btn {
+  background: #8b48bf;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
 }
 
-.section-3{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: purple;
+.presentation-btn:hover {
+  background: #CCA4CC;
 }
 
-.art-sec3{
-    color: white;
+.banner {
+  display: flex;
+  width: 100%;
+  padding: 40px 15%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: #fff;
+  background: #8b48bf;
 }
 
-.div-sec3{
-    color: white;
-    text-align: right;
+.banner-title {
+  font-size: 36px;
+  text-align: left;
+  width: 50%;
 }
 
-.section-4{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 120px;
+.banner-description {
+  font-size: 16px;
+  font-weight: 500;
+  width: 45%;
 }
 
-.div-sec4{
-    position: absolute;
-    top: 120px;
-    left: 300px;
+.button-container {
+  display: flex;
+  justify-content: right;
+  width: 45%;
 }
 
+.button-container button {
+  background: #fff;
+  border: none;
+  color: #8b48bf;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+}
 
-.section-5{
+.best__container{
     background: linear-gradient(
       to bottom,
       #ffffff 0%, 
       #ffffff 20%,
-      #D3D3D3 20%,  
-      #D3D3D3 100%
+      #fafafa 20%,  
+      #fafafa 100%
     );
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    
 }
 
-.div-sec5{
+.best__title{
+    color: #323851;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
 }
 
-.div-sec5-abs{
+.best__item{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,28 +168,87 @@ header{
     margin: 10px;
 }
 
-.btn-sec5{
+.best__img {
+  border-radius: 50%;
+}
+
+.best__paragraph{
+  color: #b3b2b7;
+  text-align: center;
+}
+
+.best__button{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
-.section-6{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.differentials__container {
+  background: #fafafa;
+  padding: 3.5rem 7.5%;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.differentials__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer-1{
-    display: flex;
-    align-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.differentials__item {
+  width: 45%;
+  list-style-type: none;
+  padding: 1.5rem 4rem;
+}
 
+.item__title {
+  color: #323851;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.item__content {
+  color: #b3b2b7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 156.6%; /* 25.523px */
+  letter-spacing: -0.163px;
+}
+
+.button1-li {
+  background-image: url(../img/button1.svg);
+  background-size: 9.5%;
+  background-repeat: no-repeat;
+  background-position: top 1.9rem left 0rem;
+}
+
+.button2-li {
+  background-image: url(../img/button2.svg);
+  background-size: 9.5%;
+  background-repeat: no-repeat;
+  background-position: top 1.9rem left 0rem;
+}
+
+.button3-li {
+  background-image: url(../img/button3.svg);
+  background-size: 9.5%;
+  background-repeat: no-repeat;
+  background-position: top 1.9rem left 0rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1e1e26;
+  padding: 2rem 10%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
 }
