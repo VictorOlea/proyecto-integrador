@@ -126,9 +126,37 @@ header{
 
 
 .section-5{
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%, 
+      #ffffff 20%,
+      #D3D3D3 20%,  
+      #D3D3D3 100%
+    );
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 15px;
+}
+
+.div-sec5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-sec5-abs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-sec5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-6{
