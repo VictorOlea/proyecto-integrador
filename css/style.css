@@ -168,21 +168,21 @@ header {
 
 .button1-li {
   background-image: url(../img/button1.svg);
-  background-size: 10%;
+  background-size: 9.5%;
   background-repeat: no-repeat;
   background-position: top 1.9rem left 0rem;
 }
 
 .button2-li {
   background-image: url(../img/button2.svg);
-  background-size: 10%;
+  background-size: 9.5%;
   background-repeat: no-repeat;
   background-position: top 1.9rem left 0rem;
 }
 
 .button3-li {
   background-image: url(../img/button3.svg);
-  background-size: 10%;
+  background-size: 9.5%;
   background-repeat: no-repeat;
   background-position: top 1.9rem left 0rem;
 }
@@ -207,15 +207,16 @@ header {
   align-items: center;
 }
 
-footer {
+.footer {
+  width: 100%;
+  background-color: #1e1e26;
+  padding: 2rem 10%;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
-.footer-1 {
+.footer div {
   display: flex;
-  align-content: space-between;
   flex-direction: column;
-  align-items: center;
 }
