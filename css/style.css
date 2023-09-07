@@ -119,17 +119,18 @@ header {
 .banner {
   display: flex;
   width: 100%;
-  padding: 40px 15%;
+  padding: 4% 15%;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 10%;
   color: #fff;
   background: #8b48bf;
 }
 
 .banner-title {
-  font-size: 36px;
+  font-size: 2rem;
   text-align: left;
+  padding-right: 3rem;
   width: 50%;
 }
 
@@ -267,6 +268,7 @@ header {
   padding: 2rem 10%;
   color: #fff;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: top;
 }
@@ -289,14 +291,31 @@ header {
   justify-content: space-around;
 }
 
+.right {
+  flex-direction: column;
+}
+
+.left {
+  flex-direction: column;
+}
+
 .links-footer {
   display: flex;
   flex-direction: column;
+  width: 100px;
 }
 
 .links-footer li {
   list-style: none;
   margin-bottom: 0.5rem;
+}
+
+section.links-container {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-between;
+  gap: 40%;
 }
 
 .suscription {
@@ -321,8 +340,152 @@ header {
   padding: 0.75rem 1.5rem;
 }
 
-.credits {
+.credits-desktop {
   font-size: 14px;
   color: #8c8c94;
   text-align: right;
+}
+
+.credits-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  /*Sección de Banner 1*/
+  .banner {
+    flex-direction: column;
+    padding: 8% 4%;
+    gap: 30px;
+    background: #3cddf3;
+  }
+
+  .banner-title {
+    font-size: 24px;
+    padding-right: 5rem;
+    text-align: left;
+    width: 90%;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    width: 90%;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .button-container button {
+    background-color: #232c50;
+    color: #fff;
+  }
+
+  /*Sección de Diferenciales*/
+  .differentials__container {
+    padding: 5% 0;
+  }
+
+  .differentials__item {
+    width: 100%;
+    list-style-type: none;
+    padding: 1.5rem 0rem;
+    padding-left: 2.5rem;
+  }
+
+  .item__title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 1.5rem;
+    border-radius: 20px 0 0 20px;
+    padding: 0.35rem 0rem 0.35rem 4rem;
+    width: 100%;
+    color: #323851;
+    background-color: #8b48bf4d;
+    z-index: 1;
+  }
+
+  .item__content {
+    padding: 1.5rem 1.5rem 0.5rem 0rem;
+  }
+
+  .button1-li {
+    background-image: url(../img/button1.svg);
+    background-size: 14%;
+    background-repeat: no-repeat;
+    background-position: top 1.4rem left 2rem;
+  }
+
+  .button2-li {
+    background-image: url(../img/button2.svg);
+    background-size: 14%;
+    background-repeat: no-repeat;
+    background-position: top 1.4rem left 2rem;
+  }
+
+  .button3-li {
+    background-image: url(../img/button3.svg);
+    background-size: 14%;
+    background-repeat: no-repeat;
+    background-position: top 1.4rem left 2rem;
+  }
+
+  h1.banner-title {
+    text-align: center;
+    font-size: 2.35rem;
+    width: 100%;
+    padding: 0.5rem 4.5rem;
+    line-height: 119.6%; /* 47.84px */
+    letter-spacing: -0.2px;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0.5rem 8%;
+  }
+
+  .suscription input {
+    padding: 0.5rem 5rem 0.5rem 0.75rem;
+  }
+
+  .suscription {
+    padding-bottom: 2rem;
+  }
+
+  .footer section {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  .social-media {
+    width: 80vw;
+    padding: 2.5rem 0;
+  }
+
+  .credits-desktop {
+    display: none;
+  }
+
+  .credits-mobile {
+    display: block;
+    font-size: 14px;
+    color: #8c8c94;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  section.links-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2.5rem;
+    justify-content: space-between;
+    gap: 25%;
+
+    align-items: start;
+  }
 }
